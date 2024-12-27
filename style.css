@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Gabarito:wght@400..900&family=Parkinsans:wght@300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rowdies:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(./img/background_img.png);
+    /* object-fit: fill; */
+   
+    font-family: "Parkinsans", serif;
+}
+
+
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+
+
+.box {
+    position: relative;
+    left: 110px;
+    width: 550px;
+    height: 600px;
+    padding: 0 10px;
+   
+    /* box-shadow: ; */
+    /* filter: blur(0.5); */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+.first-box {
+    margin-top: 5px;
+    height: 50%;
+    /* background-color:blue; */
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    /* margin: 10px 0; */
+}
+
+
+
+.input-box, .result-box {
+    margin: 8px 20px;
+}
+
+.mg-top {
+    margin-top: 10px;
+}
+
+.box .input-box h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    text-shadow: -4px 3px rgba(0, 0,0, 0.65);
+}
+
+.box .input-box input {
+    width: 97%;
+    height: 28px;
+    padding: 0 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.35);
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.box .first-box .tip-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.box .first-box .tip-box .btn {
+    display: flex;
+    margin: 5px;
+    width: 150px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 550;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+.result-box h3{
+    padding:5px;
+    text-shadow: -4px 3px rgba(0, 0,0, 0.65);
+    
+}
+
+hr{
+    margin-top: 10px;
+    height: 3px;;
+    background-color: white;
+}
+
+.second-box {
+    height: 50%;
+    margin: 10px 0px ;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4 );
+    
+}
+
+.second-box .result-box span{
+    padding-left: 5px;
+    font-size: 17px;
+    font-weight: 550;
+    text-shadow: -4px 3px rgba(0, 0,0, 0.65);
+}
+.second-box .result-box .sign{
+    margin-left: 8px;
+    
+}
+
+#reset-btn,#submit-btn{
+    float: right;
+    margin: 0 15px;
+    /* background-color: white; */
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    /* font-size: ; */
+}
+
+.box .first-box .tip-box .btn:hover,
+#reset-btn:hover, #submit-btn:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 2px 1px 40px 1px rgba(0, 0,0, 0.5);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input::placeholder{
+    font-family: "Parkinsans", serif;
+    color: white;
+
+}
+
+.btn-bg{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    box-shadow: 2px 1px 40px 1px rgba(255, 255,255, 0.4);
+
+}
+
+.bg-colorWhite{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 8px 3px rgba(0, 0,0, 0.4);
+}

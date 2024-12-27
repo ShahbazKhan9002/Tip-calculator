@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculater</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="container">
+
+        <div class="box bg-colorWhite">
+
+            <div class="first-box">
+
+                <div class="input-box mg-top">
+                    <h2>Bill Amount</h2>
+                    <input type="number"  name="bill" id="bill-amt" placeholder="Amount">
+                </div>
+                <div class="input-box">
+                    <h2>Total Person</h2>
+                    <input type="number"  name="Persons" id="total-person" placeholder="Number of persons">
+                </div>
+                <div class="input-box">
+                    <h2>Select Tip</h2>
+                    <div class="tip-box">
+                        <button class="btn btn-bg" id="excellent">15% - Excellent</button>
+                        <button class="btn btn-bg" id="very-good">10% - Very Good</button>
+                        <button class="btn btn-bg" id="good">5% - Good</button>
+                        <button class="btn btn-bg" id="normal">3% - Normal</button>
+                        <button class="btn btn-bg" id="bad">2% - Bad</button>
+                        <button class="btn btn-bg">0% - Worst</button>
+                    </div>
+                </div>
+                
+            </div>
+            <hr>
+
+            <div class="second-box">
+
+
+                <div class="result-box">
+                    <h3>Tip Amount</h3>
+                    <span class="sign">₹</span><span id="tip-amt" >00 </span>
+
+                </div>
+                <div class="result-box">
+                    <h3>Total Amount</h3>
+                    <span class="sign">₹</span><span id="total-amt">00 </span>
+                </div>
+                <div class="result-box">
+                    <h3>Amount Each Person</h3>
+                    <span class="sign">₹</span><span id="amt-each-person" >00 </span>
+
+                </div>
+
+                <button type="reset" id="reset-btn" class="btn-bg">Reset</button>
+                <button type="submit" id="submit-btn" class="btn-bg">Calculate</button>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
